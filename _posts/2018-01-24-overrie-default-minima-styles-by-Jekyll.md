@@ -2,7 +2,7 @@
 layout: post
 title:  "Override default minima styles by Jekyll"
 date:   2018-01-24 13:15:42 +0800
-categories: Jekyll Github
+categories: Jekyll
 author: Yih En
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up Github Page with Jekyll"
 date:   2018-01-18 14:15:42 +0800
-categories: Jekyll Github
+categories: [Jekyll, Github]
 author: Yih En
 ---
 Setting up a Github page with Jekyll is quite straight forward.

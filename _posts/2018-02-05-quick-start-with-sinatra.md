@@ -2,7 +2,7 @@
 layout: post
 title:  "Quickstart with Sinatra App"
 date:   2018-02-05 11:15:00 +0800
-categories: Ruby Sinatra
+categories: [Ruby, Sinatra]
 author: Yih En
 ---
 Creates a page with Sinatra framework in a fly
