@@ -2,7 +2,7 @@
 layout: post
 title:  "Eslint on Nuclide"
 date:   2018-03-26 15:04:30 +0800
-categories: [Nuclide Javascripts ESLint]
+categories: [Nuclide, Javascripts]
 author: Yih En
 ---
 
