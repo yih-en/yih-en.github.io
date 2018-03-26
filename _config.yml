@@ -1,0 +1,30 @@
+# Site settings
+title:          "Code Pensieve"
+description:    "It's just reminders on how I do coding"
+url:            "https://yih-en.github.io"
+remote_theme:  chesterhow/tale
+
+# Author
+author:
+  name:         Lim Yih En
+  url:          https://github.com/yih-en
+  email:        yihen012@gmail.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+permalink:    /:year-:month-:day/:title
+paginate:     5
+
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
