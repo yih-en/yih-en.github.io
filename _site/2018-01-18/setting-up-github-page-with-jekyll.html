@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Setting up Github Page with Jekyll &middot; Code Pensieve
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Code Pensieve</h2>
+        </a>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/">Posts</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        Yih En
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-01-18 14:15:42 +0800">January 18, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">Setting up Github Page with Jekyll</h1>
+  <div class="post-line"></div>
+
+  <p>Setting up a Github page with Jekyll is quite straight forward.</p>
+
+<p>Simply follow the steps below:</p>
+
+<h3 id="create-page-with-jekyll-locally">Create page with Jekyll locally</h3>
+
+<ul>
+  <li>Create a new local directory:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="n">init</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">project</span> <span class="nb">name</span><span class="o">&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Go to your directory:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">project</span> <span class="nb">name</span><span class="o">&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Create a <code class="highlighter-rouge">Gemfile</code> and add these lines to your <code class="highlighter-rouge">Gemfile</code>:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">source</span> <span class="s1">'https://rubygems.org'</span>
+<span class="n">gem</span> <span class="s1">'github-pages'</span><span class="p">,</span> <span class="ss">group: :jekyll_plugins</span></code></pre></figure>
+
+<ul>
+  <li>Install all the dependencies:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="n">install</span></code></pre></figure>
+
+<ul>
+  <li>Create new page: (by default, it will create a page using theme <code class="highlighter-rouge">minima</code>)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="p">.</span> <span class="nf">-</span><span class="o">-</span><span class="n">force</span></code></pre></figure>
+
+<ul>
+  <li>In your root directory, run the pages locally:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<h3 id="publish-your-changes-to-github">Publish your changes to Github</h3>
+<ul>
+  <li>Create a public repository using your Github account: See <a href="https://help.github.com/articles/create-a-repo/">docs</a></li>
+  <li>Make sure you make all changes to master branch for your github page</li>
+  <li>Visit <code class="highlighter-rouge">&lt;username&gt;.github.io</code> after <em>a few minutes</em>(IMPORTANT). Your page is ready :)</li>
+</ul>
+
+<h3 id="good-resources">Good Resources</h3>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/github-pages/">Jekyll Doc on Github Page</a></li>
+  <li><a href="http://jmcglone.com/guides/github-pages/">Detailed guide on setting up Github Page</a></li>
+  <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Jekyll Markdown Cheatsheet</a></li>
+</ul>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2018-01-24/overrie-default-minima-styles-by-Jekyll" class="left arrow">&#8592;</a>
+  
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2018-03-26 14:50:14 +0800">2018</time> Lim Yih En. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+  </body>
+</html>

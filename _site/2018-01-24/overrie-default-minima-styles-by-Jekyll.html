@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Override default minima styles by Jekyll &middot; Code Pensieve
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Code Pensieve</h2>
+        </a>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/">Posts</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        Yih En
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-01-24 13:15:42 +0800">January 24, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">Override default minima styles by Jekyll</h1>
+  <div class="post-line"></div>
+
+  <p>Follow the steps to override the default minima style provided by Jekyll.</p>
+
+<h3 id="create-a-new-jekyll-page">Create a new Jekyll Page</h3>
+
+<ul>
+  <li>Go to your project folder and run:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="o">&lt;</span><span class="no">PATH</span><span class="o">&gt;</span></code></pre></figure>
+
+<p>if you want to create page at the root path, run:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="p">.</span> <span class="nf">-</span><span class="o">-</span><span class="n">force</span></code></pre></figure>
+
+<h3 id="override-styles">Override Styles</h3>
+
+<h5 id="basic-understanding">Basic Understanding</h5>
+<p>The Minima theme gem contains these files:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ ├── LICENSE.txt
+ ├── README.md
+ ├── _includes
+ │   ├── disqus_comments.html
+ │   ├── footer.html
+ │   ├── google-analytics.html
+ │   ├── head.html
+ │   ├── header.html
+ │   ├── icon-github.html
+ │   ├── icon-github.svg
+ │   ├── icon-twitter.html
+ │   └── icon-twitter.svg
+ ├── _layouts
+ │   ├── default.html
+ │   ├── home.html
+ │   ├── page.html
+ │   └── post.html
+ ├── _sass
+ │   ├── minima
+ │   │   ├── _base.scss
+ │   │   ├── _layout.scss
+ │   │   └── _syntax-highlighting.scss
+ │   └── minima.scss
+ └── assets
+     └── main.scss
+
+</code></pre></div></div>
+
+<p>Override the styles inside <code class="highlighter-rouge">_sass</code> folder by follow the steps below</p>
+
+<h3 id="steps-to-override-theme">Steps to override theme:</h3>
+
+<ul>
+  <li>At your directory root, create a folder <code class="highlighter-rouge">_sass</code>.</li>
+  <li>Copy <code class="highlighter-rouge">minima.scss</code> from the <a href="https://github.com/jekyll/minima/blob/master/_sass/minima.scss">gem github page</a> and create a <code class="highlighter-rouge">minima</code> folder inside <code class="highlighter-rouge">_sass</code> folder</li>
+  <li>Create your stylesheet under <code class="highlighter-rouge">minima</code> folder</li>
+  <li>At the bottom of <code class="highlighter-rouge">minima.scss</code>, you will see <code class="highlighter-rouge">@import</code> statement. Add <code class="highlighter-rouge">"minima/&lt;your new css file name&gt;</code>.</li>
+</ul>
+
+
+</div>
+
+<div class="pagination">
+  
+    <a href="/2018-02-05/quick-start-with-sinatra" class="left arrow">&#8592;</a>
+  
+  
+    <a href="/2018-01-18/setting-up-github-page-with-jekyll" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2018-03-26 14:50:14 +0800">2018</time> Lim Yih En. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Quickstart with Sinatra App &middot; Code Pensieve
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Code Pensieve</h2>
+        </a>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/">Posts</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        Yih En
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-02-05 11:15:00 +0800">February 05, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">Quickstart with Sinatra App</h1>
+  <div class="post-line"></div>
+
+  <p>Creates a page with Sinatra framework in a fly</p>
+
+<ul>
+  <li>Create a new local directory:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">mkdir</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">project</span> <span class="nb">name</span><span class="o">&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Go to your directory:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">project</span> <span class="nb">name</span><span class="o">&gt;</span></code></pre></figure>
+
+<ul>
+  <li>Create a <code class="highlighter-rouge">Gemfile</code> and add these lines to your <code class="highlighter-rouge">Gemfile</code>:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">source</span> <span class="s1">'https://rubygems.org'</span>
+<span class="n">gem</span> <span class="s1">'sinatra'</span></code></pre></figure>
+
+<ul>
+  <li>Install all the dependencies:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span> <span class="o">&amp;&amp;</span> <span class="n">bundle</span> <span class="n">install</span></code></pre></figure>
+
+<ul>
+  <li>Create new page <code class="highlighter-rouge">hello.rb</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'sinatra'</span>
+
+<span class="n">get</span> <span class="s1">'/'</span> <span class="k">do</span>
+  <span class="s2">"Hello World!"</span>
+<span class="k">end</span></code></pre></figure>
+
+<ul>
+  <li>Set up <code class="highlighter-rouge">config.ru</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">'./hello'</span>
+<span class="n">run</span> <span class="no">Sinatra</span><span class="o">::</span><span class="no">Application</span></code></pre></figure>
+
+<ul>
+  <li>In your root directory, run the pages locally:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">rackup</span></code></pre></figure>
+
+<ul>
+  <li>Go to <code class="highlighter-rouge">http://localhost:9292</code>, you should see ‘Hello World!’.</li>
+</ul>
+
+<h3 id="good-resources">Good Resources</h3>
+<ul>
+  <li><a href="https://devcenter.heroku.com/articles/rack">Deploy rack based app in heroku</a></li>
+</ul>
+
+
+</div>
+
+<div class="pagination">
+  
+  
+    <a href="/2018-01-24/overrie-default-minima-styles-by-Jekyll" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2018-03-26 14:50:14 +0800">2018</time> Lim Yih En. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+  </body>
+</html>
