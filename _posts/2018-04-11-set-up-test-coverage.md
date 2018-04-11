@@ -9,13 +9,13 @@ author: Yih En
 Use `SimpleCov` to generate a code coverage report.
 
 Here are the steps with Rails:
-1. Add `SimpleCov` in your gemfile and `bundle install`:
+* Add `SimpleCov` in your gemfile and `bundle install`:
 
 {% highlight ruby %}
 gem 'simplecov', require: false, group: :test
 {% endhighlight %}
 
-2. Add the lines of codes in bold below inside test_helper.rb at the very top just under `ENV["RAILS_ENV"] = "test”`.
+* Add the lines of codes in bold below inside test_helper.rb at the very top just under `ENV["RAILS_ENV"] = "test”`.
 
 {% highlight ruby %}
   require 'simplecov'
@@ -30,5 +30,5 @@ end
 
 {% endhighlight %}
 
-  3. Run `bundle exec rake test`
-4. You can find the coverage report in the coverage/index.html
+  * Run `bundle exec rake test`
+* You can find the coverage report in the coverage/index.html
