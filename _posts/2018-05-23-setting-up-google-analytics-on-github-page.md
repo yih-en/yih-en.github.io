@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setting Up Google Analytics on Github Pages with Jekyll"
-date:   2018-05-18 12:00:40 +0800
+date:   2018-05-23 12:00:40 +0800
 categories: [Analytics, Jekyll]
 author: Yih En
 ---
