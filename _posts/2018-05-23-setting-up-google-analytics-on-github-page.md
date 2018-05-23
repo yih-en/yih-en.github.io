@@ -16,13 +16,7 @@ Steps to set up Google Analytics on Github pages:
 
 4. Put your tracking ID in your _config.yml_ file. Example: `google_analytics: UA-XXXXXXX`
 
-5. Include _analytics.html_ in your _head.html_ with the following codes:
-
-{% highlight ruby %}
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-  {% endif %}
-{% endhighlight %}
+5. Include the snippets in your _head.html_.
 
 6. Push your code to github and see the analytics live! To verify, go to your live site and view source to check for the snippets on the <head>.
 
